@@ -14,7 +14,6 @@ closeMenu.addEventListener("click", () => {
 //-----------------Modo oscuro
 const themeToggle = document.getElementById("toggle-theme");
 
-// Tema claro (sin cambios)
 const lightTheme = {
   '--color-white': '#FFFFFF',
   '--color-light': '#CEF2EF',
@@ -23,16 +22,15 @@ const lightTheme = {
   '--color-dark': '#333333'
 };
 
-// Tema oscuro MÁS DARK 
+
 const darkTheme = {
-  '--color-white': '#0d0d0d',      // Fondo
-  '--color-light': '#1a1a1a',      // Secciones
-  '--color-black': '#ffffff',      // Texto claro
-  '--color-accent': '#ff8800',     // Botones
-  '--color-dark': '#101010'        // Footer oscuro
+  '--color-white': '#0d0d0d',      
+  '--color-light': '#1a1a1a',      
+  '--color-black': '#ffffff',      
+  '--color-accent': '#ff8800',     
+  '--color-dark': '#101010'        
 };
 
-// Función para aplicar tema y fondo
 function applyTheme(theme, isDarkMode) {
   const root = document.documentElement;
   for (let key in theme) {
@@ -45,7 +43,7 @@ function applyTheme(theme, isDarkMode) {
     : "url('Assets/background.png')";
 }
 
-// Al cargar
+
 window.addEventListener("DOMContentLoaded", () => {
   const savedTheme = localStorage.getItem("theme") || "light";
   const isDark = savedTheme === "dark";
@@ -54,7 +52,7 @@ window.addEventListener("DOMContentLoaded", () => {
   themeToggle.src = isDark ? "Assets/sol.png" : "Assets/luna.png";
 });
 
-// Al hacer clic en el ícono
+
 themeToggle.addEventListener("click", () => {
   const isCurrentlyDark = themeToggle.src.includes("luna");
 
