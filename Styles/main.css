@@ -7,7 +7,7 @@
     --font-lg: 1.25rem;   
     --font-xl: 1.8rem;    
     --font-2xl: 2.4rem;     
-    --font-3xl: 5rem;     
+    --font-3xl: 8rem;     
     --font-xxl:12rem;
     --color-white: #FFFFFF;       
     --color-light: #CEF2EF;       
@@ -46,7 +46,7 @@ header{
     justify-items: center;
     grid-template-columns: 1fr 2fr 1fr;
     gap: 40px;
-    background-color: var(--color-dark);
+    background-color: var(--color-white);
     text-align: center;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -54,7 +54,7 @@ header{
 .nav a{
     font-size: var(--font-xl);
     font-weight: 400;
-    color: var(--color-white);
+    color: var(--color-black);
 }
 .nav__left{
     grid-column: 2/3;
@@ -63,6 +63,7 @@ header{
 .nav__right{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 40px;
     grid-column: 2/3;
     grid-row: 3/4;
@@ -70,7 +71,9 @@ header{
 .nav.active {
     display: grid;
 }
-
+.nav__right img{
+    width: 40px;
+}
 .menu{
     width: 28px;
 }
@@ -96,7 +99,7 @@ header{
     padding: 0 60px;
 }
 .hero__title{
-    font-size: var(--font-xxl);
+    font-size: var(--font-3xl);
     font-weight: 900;
     color: var(--color-white);
     grid-column: 1/2;
@@ -135,6 +138,9 @@ header{
 }
 .section__title--center{
     text-align: center;
+}
+.section__title--black{
+    color: var(--color-black);
 }
 .section__text{
     font-size: var(--font-xl);
@@ -177,6 +183,7 @@ header{
     font-size: var(--font-xl);
     font-weight: 500;
     text-align: center;
+    color: var(--color-black);
 }
 .product__button{
     width: 150px;
@@ -194,13 +201,13 @@ header{
 
 
 footer{
-    background-color: var(--color-dark);
+    background-color: #333333;
     display: grid;
     gap: 12px;
     padding: 60px;
 }
 .footer__text{
-    color: var(--color-white);
+    color:white;
     font-size: var(--font-md);
 }
 .footer__text--bold{
