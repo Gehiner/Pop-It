@@ -118,3 +118,5 @@ setInterval(() => {
   currentIndex = (currentIndex + 1) % totalItems;
   updateCarousel();
 }, 10000);
+
+
