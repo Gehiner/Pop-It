@@ -46,6 +46,7 @@ header{
     text-align: center;
     padding-top: 40px;
     padding-bottom: 40px;
+    z-index: 2;
 }
 .nav a{
     font-size: var(--font-xl);
