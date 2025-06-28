@@ -8,7 +8,10 @@
 }
 
 @media (min-width:700px){
-    header{
+    .header__store{
+        height: auto;
+    }
+    .header__index{
         height:90vh;
     }
     .nav{
